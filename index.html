@@ -2,18 +2,14 @@
 <html>
 <head>
     <title>Redirecting to Roblox...</title>
-    <script>
-        setTimeout(function() {
-            window.location.href = "https://www.roblox.com/home";
-        }, 1000);
-
-        setTimeout(function() {
-            window.location.href = "javascript:Roblox.GameLauncher.joinGameInstance(131042387601353)";
-        }, 2500);
-    </script>
 </head>
 <body>
-    <h1>Redirecting to Roblox...</h1>
-    <p>If nothing happens, <a href="javascript:Roblox.GameLauncher.joinGameInstance(131042387601353)">click here</a>.</p>
+    <h1>Starting Roblox...</h1>
+    <p>If nothing happens, <a id="launch" href="roblox://joinGameInstance=131042387601353">click here</a>.</p>
+    <script>
+        setTimeout(function() {
+            document.getElementById("launch").click();
+        }, 1500);
+    </script>
 </body>
 </html>
